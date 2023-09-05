@@ -1,3 +1,4 @@
+
 # Use the official Python image as the base image
 FROM python:3.8
 
@@ -8,9 +9,9 @@ WORKDIR /app
 COPY . /app
 
 # Install the application dependencies
-RUN pip install pipenv
-RUN pipenv install
-RUN pipenv shell
+RUN pip install --upgrade pip  # Upgrade pip to avoid potential issues
+RUN pip install pipenv        # Install pipenv package manager
+RUN pipenv install --system   # Install application dependencies using pipenv
 
 # Define the entry point for the container
 CMD ["flask", "run", "--host=0.0.0.0"]

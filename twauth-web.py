@@ -17,9 +17,9 @@ show_user_url = 'https://api.twitter.com/1.1/users/show.json'
 
 # Support keys from environment vars (Heroku).
 app.config['APP_CONSUMER_KEY'] = os.getenv(
-    'TWAUTH_APP_CONSUMER_KEY', 'API_Key_from_Twitter')
+    'TWAUTH_APP_CONSUMER_KEY', '1uq5gLhUPzJMVox0RljhdKRAX')
 app.config['APP_CONSUMER_SECRET'] = os.getenv(
-    'TWAUTH_APP_CONSUMER_SECRET', 'API_Secret_from_Twitter')
+    'TWAUTH_APP_CONSUMER_SECRET', 'o3n30RKdCPlYLYskmYLNS1gZjyge4ezS4JTLlfGa5r2S8lSD9u')
 
 # alternatively, add your key and secret to config.cfg
 # config.cfg should look like:

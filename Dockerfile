@@ -8,6 +8,7 @@ WORKDIR /app
 COPY . /app
 
 # Install the application dependencies
+RUN sudo -H pip install -U pipenv
 RUN pipenv install
 RUN pipenv shell
 
